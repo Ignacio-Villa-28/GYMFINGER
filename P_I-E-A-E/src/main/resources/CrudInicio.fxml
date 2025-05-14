@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="miAnchorPane" prefHeight="400.0" prefWidth="908.0" style="-fx-background-color: linear-gradient(to bottom, black,gray,white); -fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 10px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CrudInicioController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="63.0" layoutX="-5.0" layoutY="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 2, 2);" width="917.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="182.0" layoutX="99.0" layoutY="124.0" stroke="BLACK" strokeType="INSIDE" width="239.0">
+         <fill>
+            <LinearGradient endY="0.9810606060606061" startX="0.6136364069851962" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.20272904634475708" green="0.5263158082962036" blue="0.2728395164012909" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#caa600" height="400.0" layoutX="16.0" stroke="#caa600" strokeType="INSIDE" strokeWidth="2.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 2, 2);" width="74.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="182.0" layoutX="371.0" layoutY="124.0" stroke="BLACK" strokeType="INSIDE" width="239.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.9810606060606061" startX="0.6136364069851962" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.20272904634475708" green="0.5263158082962036" blue="0.2728395164012909" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="182.0" layoutX="641.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" width="239.0">
+         <fill>
+            <LinearGradient endY="0.9810606060606061" startX="0.6136364069851962" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.20272904634475708" green="0.5263158082962036" blue="0.2728395164012909" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fx:id="imgEstudiante" fitHeight="180.0" fitWidth="239.0" layoutX="114.0" layoutY="136.0" pickOnBounds="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 2, 2);">
+         <image>
+            <Image url="@Imagenes/Estudiantes.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgAdmin" fitHeight="181.0" fitWidth="239.0" layoutX="385.0" layoutY="136.0" pickOnBounds="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 2, 2);">
+         <image>
+            <Image url="@Imagenes/Admin.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgExterno" fitHeight="181.0" fitWidth="239.0" layoutX="657.0" layoutY="139.0" pickOnBounds="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 2, 2);">
+         <image>
+            <Image url="@Imagenes/Externos.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnEstudiante" layoutX="193.0" layoutY="334.0" mnemonicParsing="false" onAction="#cambiarEstudiante" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold; -fx-border-radius: 5px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 2, 2);" text="Estudiantes" />
+      <Label layoutX="213.0" layoutY="30.0" style="-fx-font-weight: bold; -fx-text-fill: black; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 2, 2);" text="Universidad Autónoma del Estado de Quintana Roo">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAdmin" layoutX="449.0" layoutY="334.0" mnemonicParsing="false" onAction="#cambiarAdmin" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold; -fx-border-radius: 5px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 2, 2);" text="Admin_Docentes" />
+      <Button fx:id="btnExterno" layoutX="744.0" layoutY="334.0" mnemonicParsing="false" onAction="#cambiarExterno" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold; -fx-border-radius: 5px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 2, 2);" text="Externos" />
+      <Label layoutX="-30.0" layoutY="191.0" rotate="-90.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 2, 2);" text="Perfil de Usuario">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="57.0" fitWidth="81.0" layoutX="810.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagenes/logo_pico_amarillo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
